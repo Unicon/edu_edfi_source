@@ -76,7 +76,25 @@ models:
     config:
       tags: ['assessment']
       enabled: "{{ var('src:domain:assessment:enabled', True) }}"
+  - name: base_ef3__open_staff_positions
+    config:
+      tags: ['core']
+  - name: base_ef3__organization_departments
+    config:
+      tags: ['core']
   - name: base_ef3__parents
+    config:
+      tags: ['core']
+  - name: base_ef3__payrolls
+    config:
+      tags: ['core']
+  - name: base_ef3__people
+    config:
+      tags: ['core']
+  - name: base_ef3__post_secondary_events
+    config:
+      tags: ['core']
+  - name: base_ef3__report_cards
     config:
       tags: ['core']
   - name: base_ef3__programs
