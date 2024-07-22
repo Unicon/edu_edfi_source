@@ -10,7 +10,12 @@ renamed as (
         file_row_number,
         filename,
         is_deleted,
-        ??
+
+        v:id::string                                as record_guid,
+        v:surveySectionResponseReference::surveyIdentifier::string as survey_id,
+        v:surveySectionResponseReference::surveySectionTitle::string as survey_section_title,
+        -- references
+        v:staffReference as staff_reference
     from survey_section_aggregate_responses
 )
 select * from renamed

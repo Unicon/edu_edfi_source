@@ -21,7 +21,7 @@ renamed as (
         v:location::string                                            as location, 
         v:responseDate::date                                          as response_date, 
         v:responseTime::int                                           as completion_time_seconds, 
-        --references
+        -- references
         v:surveyReference    as survey_reference,
         v:studentReference   as student_reference,
         v:staffReference     as staff_reference,
