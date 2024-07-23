@@ -22,8 +22,9 @@ renamed as (
         -- descriptors
         {{ extract_descriptor('v:postSecondaryEventCategoryDescriptor::string')}} as post_secondary_event_category
         --references
-        v:gradingPeriodReference as grading_period
-        v:studentReference       as student
+        v:gradingPeriodReference         as grading_period
+        v:studentReference               as student
+        v:educationOrganizationReference as education_organization_reference
         -- unflattened lists
         v:gradePointAverages          as grade_point_averages,
         v:grades                      as grades,

@@ -97,6 +97,12 @@ models:
   - name: base_ef3__report_cards
     config:
       tags: ['core']
+  - name: base_ef3__restraint_events
+    config:
+      tags: ['core']
+  - name: base_ef3__rubric_dimensions
+    config:
+      tags: ['core']
   - name: base_ef3__programs
     config:
       tags: ['core']
