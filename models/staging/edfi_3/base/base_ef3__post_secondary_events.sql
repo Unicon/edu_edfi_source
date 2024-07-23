@@ -1,8 +1,8 @@
-with post_secondary_institutions as (
-    {{ source_edfi3('post_secondary_institutions') }}
+with post_secondary_events as (
+    {{ source_edfi3('post_secondary_events') }}
 ),
 renamed as (
-    select 
+    select
         tenant_code,
         api_year,
         pull_timestamp,
@@ -11,13 +11,15 @@ renamed as (
         filename,
         is_deleted,
 
-        v:id::string                      as record_guid,
-        v:postSecondaryInstitutionId::int as post_secondary_institution_id,
-        v:nameOfInstitution::string       as name_of_institution,
-        v:shortNameOfInstitution::string  as short_name_of_institution,
-        v:webSite::string                 as web_site,
+        v:id::string                                                        as record_guid,
+        v:postSecondaryInstitutionReference:postSecondaryInstitutionId::int as post_secondary_institution_id,
+        v:studentReference:studentUniqueId::int                             as student_unique_id,
+        v:eventDate::date                                                   as event_date,
         -- descriptors
-        {{ extract_descriptor('v:postSecondaryEventCategoryDescriptor::string')}} as post_secondary_event_category
-    from post_secondary_institutions
+        {{ extract_descriptor('v:postSecondaryEventCategoryDescriptor::string') }} as post_secondary_event_category,
+        -- references
+        v:postSecondaryInstitutionReference as post_secondary_institution,
+        v:studentReference   as student
+    from post_secondary_events
 )
 select * from renamed

@@ -19,17 +19,15 @@ renamed as (
         v:numberOfDaysAbsent::int                                     as number_of_days_absent,
         v:numberOfDaysInAttendance::int                               as number_of_days_in_attendance,
         v:numberOfDaysTardy::int                                      as number_of_days_tardy,
-        -- descriptors
-        {{ extract_descriptor('v:postSecondaryEventCategoryDescriptor::string')}} as post_secondary_event_category
-        --references
+        -- references
         v:gradingPeriodReference         as grading_period
         v:studentReference               as student
         v:educationOrganizationReference as education_organization_reference
         -- unflattened lists
-        v:gradePointAverages          as grade_point_averages,
-        v:grades                      as grades,
-        v:studentCompetencyObjectives as student_competency_objectives,
-        v:studentLearningObjectives   as student_learning_objectives
+        v:gradePointAverages          as v_grade_point_averages,
+        v:grades                      as v_grades,
+        v:studentCompetencyObjectives as v_student_competency_objectives,
+        v:studentLearningObjectives   as v_student_learning_objectives
     from report_cards
 )
 select * from renamed

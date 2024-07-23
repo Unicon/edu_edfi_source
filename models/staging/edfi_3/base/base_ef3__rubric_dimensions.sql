@@ -11,14 +11,15 @@ renamed as (
         filename,
         is_deleted,
 
-        v:id::string                               as record_guid,
+        v:id::string                                              as record_guid,
         v:evaluationElementReference:educationOrganizationId::int as ed_org_id,
-        v:rubricRating::int         as rubric_rating,
-        v:dimensionOrder::int         as dimension_order,
-        v:criterionDescription::string         as criterion_description,
-        v:rubricRatingLevelDescriptor::string         as rubricRating_level_descriptor,
+        v:rubricRating::int                                       as rubric_rating,
+        v:dimensionOrder::int                                     as dimension_order,
+        v:criterionDescription::string                            as criterion_description,
+        -- descriptors
+        {{ extract_descriptor('v:rubricRatingLevelDescriptor::string')}} as rubricRating_level,
         --references
-        v:evaluationElementReference  as v_evaluation_element
+        v:evaluationElementReference  as evaluation_element
     from rubric_dimensions
 )
 select * from renamed

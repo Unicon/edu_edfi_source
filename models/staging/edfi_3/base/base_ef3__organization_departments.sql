@@ -23,12 +23,12 @@ renamed as (
         --references
         v:parentEducationOrganizationReference as education_organization,
         -- unflattened lists
-        v:categories             as categories,
-        v:addresses              as addresses,
-        v:identificationCodes    as identification_codes,
-        v:indicators             as indicators,
-        v:institutionTelephones  as institution_telephones,
-        v:internationalAddresses as international_addresses
+        v:categories             as v_categories,
+        v:addresses              as v_addresses,
+        v:identificationCodes    as v_identification_codes,
+        v:indicators             as v_indicators,
+        v:institutionTelephones  as v_institution_telephones,
+        v:internationalAddresses as v_international_addresses
     from organization_departments
 )
 select * from renamed

@@ -12,10 +12,15 @@ renamed as (
         is_deleted,
 
         v:id::string                               as record_guid,
-        v:educationOrganizationReference:educationOrganizationId::int as ed_org_id,
-        v:rubricRating::int as rubric_rating,
-        --references
-        v:educationOrganizationReference as education_organization_reference
+        v:restraintEventIdentifier::string         as record_guid,
+        v:schoolReference:schoolId::int            as school_id,
+        v:studentReference:studentUniqueId::string as student_unique_id,
+        v:eventDate::date                          as event_date,
+        -- descriptors
+        {{ extract_descriptor('v:educationalEnvironmentDescriptor::string')}} as educational_environment,
+        -- references
+        v:schoolReference  as school
+        v:studentReference as student
         -- unflattened lists
         v:programs as v_programs
         v:reasons  as v_reasons

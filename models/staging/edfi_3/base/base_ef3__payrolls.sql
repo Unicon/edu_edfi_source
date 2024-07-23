@@ -17,7 +17,7 @@ renamed as (
         v:staffReference:staffUniqueId::string          as staff_unique_id,
         v:asOfDate::date                                as as_of_date,
         v:amountToDate::int                             as amount_to_date,
-        --references
+        -- references
         v:accountReference as account,
         v:staffReference   as staff
     from payrolls
