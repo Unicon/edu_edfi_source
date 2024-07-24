@@ -17,7 +17,7 @@ renamed as (
         v:surveySectionResponseReference:surveyResponseIdentifier::string as survey_response_id,
         -- references
         v:surveySectionResponseReference as survey_section_response_reference,
-        v:personReference         as person_reference
+        v:personReference                as person_reference
     from survey_response_person_target_associations
 )
 select * from renamed
