@@ -88,9 +88,6 @@ models:
   - name: base_ef3__payrolls
     config:
       tags: ['core']
-  - name: base_ef3__people
-    config:
-      tags: ['core']
   - name: base_ef3__post_secondary_events
     config:
       tags: ['core']
@@ -98,9 +95,6 @@ models:
     config:
       tags: ['core']
   - name: base_ef3__restraint_events
-    config:
-      tags: ['core']
-  - name: base_ef3__rubric_dimensions
     config:
       tags: ['core']
   - name: base_ef3__programs
