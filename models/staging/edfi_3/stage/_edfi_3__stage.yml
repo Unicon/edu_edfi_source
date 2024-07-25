@@ -401,6 +401,10 @@ models:
     config:
       tags: ['core']
 
+  - name: stg_ef3__school_year_types
+    config:
+      tags: ['core']
+
   - name: stg_ef3__schools
     config:
       tags: ['core']
@@ -457,6 +461,10 @@ models:
           *ref_k_school
 
   - name: stg_ef3__sessions__grading_periods
+    config:
+      tags: ['core']
+
+  - name: stg_ef3__staff_absence_events
     config:
       tags: ['core']
 

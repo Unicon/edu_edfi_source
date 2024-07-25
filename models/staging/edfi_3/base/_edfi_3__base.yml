@@ -79,9 +79,6 @@ models:
   - name: base_ef3__parents
     config:
       tags: ['core']
-  - name: base_ef3__persons
-    config:
-      tags: ['core']
   - name: base_ef3__programs
     config:
       tags: ['core']
