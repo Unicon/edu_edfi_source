@@ -37,18 +37,9 @@ models:
   - name: base_tpdm__performance_evaluations
     config:
       tags: ['tpdm']
-  - name: base_tpdm__post_secondary_institutions
-    config:
-      tags: ['tpdm']
   - name: base_tpdm__rubric_dimensions
     config:
       tags: ['tpdm']
-  - name: base_tpdm__staff_educator_preparation_program_associations
-    config:
-      tags: ['tpdm']
   - name: base_tpdm__survey_response_person_target_associations
-    config:
-      tags: ['tpdm']
-  - name: base_tpdm__survey_section_response_person_target_associations
     config:
       tags: ['tpdm']
