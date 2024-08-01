@@ -18,7 +18,7 @@ renamed as (
         v:surveyResponseReference:surveyResponseIdentifier::string    as survey_response_id,
         v:comment::string                                             as comment,
         v:noResponse::boolean                                         as no_response,
-        --references
+        -- references
         v:surveyQuestionReference   as survey_question_reference,
         v:surveyResponseReference   as survey_response_reference,
         -- lists

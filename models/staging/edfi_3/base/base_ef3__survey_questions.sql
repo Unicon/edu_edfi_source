@@ -19,7 +19,7 @@ renamed as (
         v:questionText::string                                        as question_text,
         -- descriptors
         {{ extract_descriptor('v:questionFormDescriptor::string') }} as question_form,
-        --references
+        -- references
         v:surveyReference          as survey_reference,
         v:surveySectionReference   as survey_section_reference,
         -- lists

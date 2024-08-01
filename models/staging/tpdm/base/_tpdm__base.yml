@@ -7,28 +7,22 @@ models:
   - name: base_tpdm__educator_preparation_programs
     config:
       tags: ['tpdm']
-  - name: base_tpdm__survey_response_person_target_associations
-    config:
-      tags: ['tpdm']
   - name: base_tpdm__candidate_educator_preparation_program_associations
     config:
       tags: ['tpdm']
   - name: base_tpdm__financial_aids
     config:
       tags: ['tpdm']
-  - name: base_tpdm__rubric_dimensions
-    config:
-      tags: ['tpdm']
   - name: base_tpdm__evaluations
     config:
       tags: ['tpdm']
+  - name: base_tpdm__evaluation_elements
+    config:
+      tags: ['tpdm']
+  - name: base_tpdm__evaluation_element_ratings
+    config:
+      tags: ['tpdm']
   - name: base_tpdm__evaluation_ratings
-    config:
-      tags: ['tpdm']
-  - name: base_tpdm__performance_evaluations
-    config:
-      tags: ['tpdm']
-  - name: base_tpdm__performance_evaluation_ratings
     config:
       tags: ['tpdm']
   - name: base_tpdm__evaluation_objectives
@@ -37,9 +31,24 @@ models:
   - name: base_tpdm__evaluation_objective_ratings
     config:
       tags: ['tpdm']
-  - name: base_tpdm__evaluation_elements
+  - name: base_tpdm__performance_evaluation_ratings
     config:
       tags: ['tpdm']
-  - name: base_tpdm__evaluation_element_ratings
+  - name: base_tpdm__performance_evaluations
+    config:
+      tags: ['tpdm']
+  - name: base_tpdm__post_secondary_institutions
+    config:
+      tags: ['tpdm']
+  - name: base_tpdm__rubric_dimensions
+    config:
+      tags: ['tpdm']
+  - name: base_tpdm__staff_educator_preparation_program_associations
+    config:
+      tags: ['tpdm']
+  - name: base_tpdm__survey_response_person_target_associations
+    config:
+      tags: ['tpdm']
+  - name: base_tpdm__survey_section_response_person_target_associations
     config:
       tags: ['tpdm']
