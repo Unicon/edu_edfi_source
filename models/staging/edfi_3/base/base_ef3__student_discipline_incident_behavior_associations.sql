@@ -19,7 +19,7 @@ renamed as (
         {{ extract_descriptor('v:behaviorDescriptor::string') }} as behavior_type,
         -- references
         v:disciplineIncidentReference as discipline_incident_reference,
-        v:studentReference           as student_reference,
+        v:studentReference            as student_reference,
         -- lists
         v:disciplineIncidentParticipationCodes as v_discipline_incident_participation_codes,
 
